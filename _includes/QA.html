@@ -1,0 +1,163 @@
+<style type="text/css">
+.faq-item{
+   /* width: 280px;*/
+    padding: 1rem;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.faq-title{
+    display: flex;
+    cursor: pointer;
+    color: #8880eb;
+    .material-icons{
+        margin-left: auto;
+        &:before{
+            content: "＋";
+        }
+    }
+}
+
+.faq-text {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: .4s ease-in-out;
+    > * {
+        overflow: hidden;
+    }
+}
+
+/* radio or checkbox */
+.faq-toggle {
+    display: none;
+    &:checked{
+        ~ .faq-title{
+            padding-bottom: .5rem;
+        }
+        ~ .faq-title .material-icons:before{
+            content: "－";
+        }
+        ~ .faq-text{
+            grid-template-rows: 1fr;
+        }
+    }
+}
+.material-icons {
+    
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+/* reset */
+
+html, body {
+    height: 100%;
+}
+
+faq {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    color: #666;
+}
+
+faq h4, p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.note-text{
+    padding: 0.5rem;
+    text-align: center;
+}
+</style>
+<!-- About Section -->
+    <section id="QA">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">常見問題</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                
+  
+
+    <div class="faq">
+        <div class="note-text"></div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq-checkbox-1" name="faq" class="faq-toggle" checked>
+            <label class="faq-title" for="faq-checkbox-1">
+                <h4>婚禮樂團費用？</h4>
+                <span class="material-icons"></span>
+            </label>
+            <div class="faq-text">
+                <p>可以提供您宴客的日期、午晚宴、地點、桌數、期望的組合，我們將會為您報價。
+    婚禮樂團的費用會跟場地、桌數有關，因為會考量到音響設備的費用，戶外婚禮或是特殊場地費用也會有所不同，歡迎加入我們官方Line，跟我們諮詢唷！</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq-checkbox-2" name="faq" class="faq-toggle">
+            <label class="faq-title" for="faq-checkbox-2">
+                <h4>場地已經有音響設備了，樂團可以直接使用嗎？</h4>
+                <span class="material-icons"></span>
+            </label>
+            <div class="faq-text">
+                <p>一般餐廳提供的音響設備僅供擴音及播放音樂使用，並沒有辦法提供給樂團演出，樂團演出會需要專業的PA音響，會有樂器的收音器材、混音設備、監聽喇叭和相關線材，也會有樂團的音響工程師，依場地不同調整舒適的音場、樂器聲音的平衡，才能讓演出有好的呈現，所以音響工程也是樂團服務很重要的一環！<img src="../img/device.jpg" /></p>
+                
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq-checkbox-3" name="faq" class="faq-toggle">
+            <label class="faq-title" for="faq-checkbox-3">
+                <h4>樂團的表演時間？</h4>
+                <span class="material-icons"></span>
+            </label>
+            <div class="faq-text">
+                <p>樂團的服務時間（含試音準備時間）為午宴11:30-15:00，晚宴17:30-21:00，一般婚宴樂團演出的時段會從開席後～送客，分兩段演出，每段約30-45分鐘，可以配合流程彈性調整。美式婚禮、商演活動可依流程活動穿插演出，總演出時間為90分內。 為確保演出品質，建議演出45分，讓樂手休息15分鐘。</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq-checkbox-4" name="faq" class="faq-toggle">
+            <label class="faq-title" for="faq-checkbox-4">
+                <h4>曲風及歌單可以決定嗎？</h4>
+                <span class="material-icons"></span>
+            </label>
+            <div class="faq-text">
+                <p>歡迎您與我們討論喜歡的風格及曲風，溫馨抒情、熱鬧帶動，西洋、中文，純演奏或演唱，都可以客製化調整。如果有指定歌手，我們也會提供歌手歌單給您們做挑選，讓樂團營造您們喜歡的風格！
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq-checkbox-5" name="faq" class="faq-toggle">
+            <label class="faq-title" for="faq-checkbox-5">
+                <h4>請了樂團後，需要準備什麼？</h4>
+                <span class="material-icons"></span>
+            </label>
+            <div class="faq-text">
+                <p>可以告知餐廳或婚企有聘請樂團，確認可提供穩定電力110V及適當空間放置音控台。如場地有特殊的規範，也請事先告知我們。另外需要準備工作人員的便當，讓大家可以在婚宴開始前用餐，安心準備演出喔😊
+                </p>
+            </div>
+        </div>
+    </div><!--end faq-->
+
+                </div><!-- end of col-lg-12--->
+            </div>
+        </div>
+    </section>

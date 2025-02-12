@@ -1,0 +1,25 @@
+<!-- Portfolio Grid Section -->
+    <section id="video" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">精選作品</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for v in site.videos %}
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    iframe
+                       <!--<iframe width="400" height="320" src="{{ v.url }}" title="{{ v.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>&nbsp;</iframe>
+                       <iframe width="400" height="320" src="https://www.youtube.com/embed/U3kCMpLd7Cc?si=VcyOVLFpGP0WoETS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>--> 
+                       {% include youtubePlayer.html id=v.url %}
+                    <div class="portfolio-caption">
+                        <!--<h4>{{ v.title }}</h4>
+                        <p class="text-muted">{{ post.subtitle }}</p>-->
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
